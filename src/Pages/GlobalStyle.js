@@ -6,6 +6,8 @@ export default createGlobalStyle `
     padding:0;
     box-sizing:border-box;
     list-style:none;
-    text-decoration:none
+    text-decoration:none;
+    font-family:Arial;
+    color:#fff;
 }
 `

@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyle from "./Pages/GlobalStyle";
 import Header from "./Pages/Header";
+import Carousel from "./Pages/Carousel";
 
 export default class App extends React.Component{
   render(){
@@ -8,6 +9,8 @@ export default class App extends React.Component{
       <>
       <GlobalStyle/>
       <Header/>
+      <Carousel/>
+      
       </>
     )
   }
