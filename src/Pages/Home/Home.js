@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "../../components/Carousel"
-import Header from "../Header";
+import"../../components/DivModal"
+// import Header from "../Header";
 import CapitaoImg from "../../utils/img/Capitao.png" 
 import styled from "styled-components";
 
@@ -23,7 +24,7 @@ export default class Home extends React.Component{
     render(){
         return(
             <>
-            <Header/>
+            {/* <Header/> */}
             <Visto>
             <><img src={CapitaoImg} alt=""/></>
             <Description><h3>Visto recentemente</h3>

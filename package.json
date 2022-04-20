@@ -37,5 +37,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marioli99/Desafio-Final-Tudoflix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marioli99/Desafio-Final-Tudoflix/issues"
+  },
+  "homepage": "https://github.com/marioli99/Desafio-Final-Tudoflix#readme"
 }

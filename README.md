@@ -41,6 +41,6 @@ Dependendo do número de estrelas dadas ao filme, a cor do botão de like muda d
 
 ![Home](/src/utils/imgReadme/home.png)
 ![Descrição](src/utils/imgReadme/descricao.png)
-![Adicionar Filme](../tudoflix/src/utils/imgReadme/add.png)
-![Favoritos](../tudoflix/src/utils/imgReadme/favoritos.png)
-![Já vistos](../tudoflix/src/utils/imgReadme/ja-vistos.png)
+![Adicionar Filme](src/utils/imgReadme/add.png)
+![Favoritos](src/utils/imgReadme/favoritos.png)
+![Já vistos](src/utils/imgReadme/ja-vistos.png)
