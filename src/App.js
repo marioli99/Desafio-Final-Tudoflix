@@ -1,7 +1,7 @@
 import React from "react";
-import GlobalStyle from "./Pages/GlobalStyle";
+import GlobalStyle from "../src/utils/GlobalStyle";
 import Header from "./Pages/Header";
-import Carousel from "./Pages/Carousel";
+import Carousel from "../src/components/Carousel";
 
 export default class App extends React.Component{
   render(){
