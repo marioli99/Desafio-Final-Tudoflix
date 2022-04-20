@@ -6,13 +6,20 @@ import Seta from "../utils/img/Seta.png"
 // CSS Dropdown
 import {Ul,Li,Logo,LiDrop,SectionInput,DivSec, Container,Add,Pesquisa,Perfil} from "../styles/StyleHeader"
 import "../styles/drop.css"
+// Routes
+import { BrowserRouter as Router , Link , Routes , Route } from "react-router-dom";
+import Todos from "../Pages/Todos";
+import Favoritos from "../Pages/Favoritos";
+import Vistos from "../Pages/JaVistos";
+import Adicionados from "../Pages/Adicionados";
+
 
 
 
 export default class Header extends React.Component{
     render(){
         return(
-            
+            <Router>
             <Container>
             <Logo src={logo} alt="TudoFlix"/>
             <nav>
@@ -23,10 +30,10 @@ export default class Header extends React.Component{
                 <div className="dropdown-content">
             
                   <ul>
-                 <LiDrop>Todos</LiDrop>
-                 <LiDrop>Favoritos</LiDrop>
-                 <LiDrop >Já Vistos</LiDrop>
-                 <LiDrop >Adicionados</LiDrop>
+                 <LiDrop><Link to = "/movies">Todos</Link></LiDrop>
+                 <LiDrop><Link to = "/movies/favorites">Favoritos</Link></LiDrop>
+                 <LiDrop><Link to = "/movies/ever-seen">Já Vistos</Link></LiDrop>
+                 <LiDrop><Link to = "/movies/add">Adicionados</Link></LiDrop>
                  </ul>
                  </div>
                  </Li>
@@ -45,6 +52,13 @@ export default class Header extends React.Component{
             <img src={Seta} alt=""/>
             
             </Container>
+            <Routes>
+            <Route path="/movies" element={<Todos/>}/>
+            <Route path="/movies/Favorites" element={<Favoritos/>}/>
+            <Route path="/movies/ever-seen" element={<Vistos/>}/>
+            <Route path="/movies/add" element={<Adicionados/>}/>
+            </Routes>
+            </Router>
             
         )
     }
