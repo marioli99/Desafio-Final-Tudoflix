@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pesquisa from "../img/lupa.png"
+import pesquisa from "../utils/img/lupa.png"
 
 export const Container = styled.div`
   display: flex;

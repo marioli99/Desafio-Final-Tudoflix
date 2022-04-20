@@ -1,8 +1,8 @@
 import React from "react";
 // Imagens
-import logo from "../img/logoo.png"
-import PerfilImg from "../img/Perfil.jpg";
-import Seta from "../img/Seta.png"
+import logo from "../utils/img/logoo.png"
+import PerfilImg from "../utils/img/Perfil.jpg";
+import Seta from "../utils/img/Seta.png"
 // CSS Dropdown
 import {Ul,Li,Logo,LiDrop,SectionInput,DivSec, Container,Add,Pesquisa,Perfil} from "../styles/StyleHeader"
 import "../styles/drop.css"
@@ -26,6 +26,7 @@ export default class Header extends React.Component{
                  <LiDrop>Todos</LiDrop>
                  <LiDrop>Favoritos</LiDrop>
                  <LiDrop >Já Vistos</LiDrop>
+                 <LiDrop >Adicionados</LiDrop>
                  </ul>
                  </div>
                  </Li>
