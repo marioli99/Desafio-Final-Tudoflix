@@ -15,10 +15,6 @@ import Vistos from "../src/Pages/JaVistos";
 import Adicionados from "../src/Pages/Adicionados";
 import Home from "./Pages/Home/Home";
 
-
-
-
-
 export default class Header extends React.Component{
     render(){
         return(
@@ -58,6 +54,7 @@ export default class Header extends React.Component{
             <img src={Seta} alt=""/>
             
             </Container>
+            
             <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/movies" element={<Todos/>}/>
