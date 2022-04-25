@@ -44,6 +44,10 @@ export const DivSec = styled.div`
 padding: 5px;
 `;
 
+export const DivAdd = styled.div `
+padding: 5px;
+`;
+
 export const Add = styled.button`
 width: 9vw;
 height: 2.5vw;
@@ -52,6 +56,11 @@ border: none;
 color:#fff;
 background-color: red;
 font-size: 12.5px;
+cursor: pointer;
+
+:hover{
+  opacity:40%;
+}
 
 `;
 
@@ -65,6 +74,8 @@ border-radius: 3px;
 background-image:url(${pesquisa}) ;
 background-repeat: no-repeat;
 background-position: 5px 6px;
+cursor: pointer;
+
 
 ::placeholder{
   font-size: 12px;

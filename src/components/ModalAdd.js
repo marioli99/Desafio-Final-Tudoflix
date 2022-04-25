@@ -12,11 +12,11 @@ left:20%;
 z-index: 1;
 `;
 
-export default class Modal extends React.Component {
+export default class ModalAdd extends React.Component {
   render() {
     return (
       <Container>
-        <h3>Apenas um teste : D</h3>
+        <h3>Modal Add</h3>
       </Container>
     );
   }

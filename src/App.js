@@ -1,11 +1,12 @@
 import React from "react";
 import GlobalStyle from "../src/utils/GlobalStyle"
+import ModalAdd from "./components/ModalAdd";
 // Imagens
 import logo from "../src/utils/img/logoo.png"
 import PerfilImg from "../src/utils/img/Perfil.jpg";
 import Seta from "../src/utils/img/Seta.png"
 // CSS Dropdown
-import {Ul,Li,Logo,LiDrop,SectionInput,DivSec, Container,Add,Pesquisa,Perfil} from "../src/styles/StyleHeader"
+import {Ul,Li,Logo,LiDrop,SectionInput,DivSec, Container,Add,Pesquisa,Perfil, DivAdd} from "../src/styles/StyleHeader"
 import "../src/styles/drop.css"
 // Routes
 import { BrowserRouter as Router , Link , Routes , Route } from "react-router-dom";
@@ -16,6 +17,16 @@ import Adicionados from "../src/Pages/Adicionados";
 import Home from "./Pages/Home/Home";
 
 export default class Header extends React.Component{
+
+  state= {
+    imagens : [
+        {taAberto: false}
+    ],}
+
+    handleAdd = () => {
+      this.setState({ taAberto: !this.state.taAberto });
+    };
+
     render(){
         return(
             <Router>
@@ -46,9 +57,14 @@ export default class Header extends React.Component{
 
             </nav>
             <SectionInput>
-            <DivSec><Add>Adicionar Filme</Add></DivSec>
+            <DivSec><Add onClick={this.handleAdd}>Adicionar Filme</Add>
+            <DivAdd>{this.state.taAberto && <ModalAdd/>}</DivAdd>
+            </DivSec>
             <DivSec><Pesquisa type={'text'} placeholder=" Pesquisar"  /></DivSec>
+            
             </SectionInput>
+            
+            
 
             <Perfil src={PerfilImg} alt="TudoFlix"/>
             <img src={Seta} alt=""/>
