@@ -106,6 +106,11 @@ export default class MyCarousel extends React.Component {
       </Carousel>
         {this.state.taAberto && <Modal />}
         {this.state.taAberto2 && <Modal />}
+        
+
+      {/* closeModal = () => {
+    this.setState({ stateModal: false });
+   }; */}
       </>
     );
   }
