@@ -1,48 +1,9 @@
 import React from "react";
 import Carousel from "../../components/Carousel"
 import"../../components/DivModal"
-// import Header from "../Header";
 import CapitaoImg from "../../utils/img/Capitao.png" 
 import Coracao from "../../utils/img/coracao.png"
-import styled from "styled-components";
-
-
-const Visto = styled.div`
-display: flex;
-padding-left: 65px;
-`;
-const Destaque = styled.div`
-padding-left: 65px;
-margin-top:5%;
-h2{
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-`;
-const Infos = styled.div`
-margin-top: 30px;
-width: 36vw;
-padding-left: 60px;
-
- p {
-     font-size: 14px;
-     text-align: left;
-     padding-bottom: 5px;
-
- }
- h3{
-     font-size: 16px;
-     padding-bottom: 5px;
-     }
- h1{
-    padding-bottom: 5px;
-
- }
- img:hover{
-     cursor: pointer;
- }
-`;
+import { Visto, Infos , Destaque } from "../../styles/StyleHome";
 
 export default class Home extends React.Component{
     render(){

@@ -4,8 +4,6 @@ import Capa from "../utils/img/img.png"
 import {Container, SubContainer, ContainerFile, Radios, File, InputName, InputDes, Buttons, Confirmar} from "../styles/StyleModalAdd"
 
 
-
-
 export default class ModalAdd extends React.Component {
   render() {
     return (

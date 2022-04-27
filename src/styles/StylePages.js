@@ -16,7 +16,7 @@ export const Container = styled.div `
 export const ContainerTwo = styled.div `
    display: flex;
    flex-flow: row wrap;
-   justify-content: space-around;
+   justify-content: space-between;
 `;
 
 export const ContainerState = styled.ul`

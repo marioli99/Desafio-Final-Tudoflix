@@ -74,13 +74,13 @@ border-radius: 3px;
 background-image:url(${pesquisa}) ;
 background-repeat: no-repeat;
 background-position: 5px 6px;
+padding-left: 30px;
 cursor: pointer;
 
 
 ::placeholder{
   font-size: 12px;
   font-weight: bold;
-  padding: 7% 0 0 7%;
   color: #FFFFFF;
   
 }
@@ -93,4 +93,19 @@ margin-left: 25%;
 
 export const LiDrop = styled.li`
 margin: 10px 0 5px;
+`;
+
+export const DivBusca = styled.div`
+display: flex;
+flex-direction: column;
+
+img{
+  width: 21vw;
+}
+
+.Busca{
+  margin-top: 600px;
+}
+
+
 `;
