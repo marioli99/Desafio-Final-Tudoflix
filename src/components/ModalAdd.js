@@ -1,22 +1,51 @@
 import React from "react";
-import styled from "styled-components";
+import ReactStars from "react-rating-stars-component";
+import Capa from "../utils/img/img.png"
+import {Container, SubContainer, ContainerFile, Radios, File, InputName, InputDes, Buttons, Confirmar} from "../styles/StyleModalAdd"
 
 
-const Container = styled.div`
-border: solid blueviolet 10px;
-width: 50vw;
-height: 50vh;
-position: absolute;
-top: 20%;
-left:20%;
-z-index: 1;
-`;
+
 
 export default class ModalAdd extends React.Component {
   render() {
     return (
       <Container>
-        <h3>Modal Add</h3>
+      
+      <SubContainer>
+      <h3>Adicionar Filme</h3>
+      <p>Nome </p>
+      <InputName type={"text"}/>
+
+      <p>Descrição</p>
+      <InputDes type={"text"}/>
+      <p>Status</p>
+      <Radios>
+      <input type={'radio'} name="Já Asisti"  /> Já Asisti
+      <input type={'radio'} name= "Ainda não asisti"/>Ainda não asisti
+      </Radios>
+    
+      <p>Nota</p>
+
+      <ReactStars 
+      size={40}
+      char="✰"/>
+
+      <Buttons>
+        <button>Cancelar</button>
+        <Confirmar>Confirmar</Confirmar>
+        </Buttons>
+      
+      </SubContainer>
+      <ContainerFile>
+      <p>Imagem de capa </p>
+      <img src={Capa} alt='' />
+      <File>
+      <label for="name" class="btnPerson">Selecionar Imagem</label>
+      <input type={'file'} id="name" accept="image/*" name="capaFilme" />
+      </File>
+  
+      </ContainerFile>
+      
       </Container>
     );
   }

@@ -43,10 +43,10 @@ export default class Header extends React.Component{
             
                   <ul>
                  {/* <LiDrop><Link to = "/">Inicio</Link></LiDrop> */}
-                 <LiDrop><Link to = "/movies">Todos</Link></LiDrop>
-                 <LiDrop><Link to = "/movies/favorites">Favoritos</Link></LiDrop>
-                 <LiDrop><Link to = "/movies/ever-seen">Já Vistos</Link></LiDrop>
-                 <LiDrop><Link to = "/movies/add">Adicionados</Link></LiDrop>
+                 <Link to = "/movies"><LiDrop>Todos</LiDrop></Link>
+                 <Link to = "/movies/favorites"><LiDrop>Favoritos</LiDrop></Link>
+                 <Link to = "/movies/ever-seen"><LiDrop>Já Vistos</LiDrop></Link>
+                 <Link to = "/movies/add"><LiDrop>Adicionados</LiDrop></Link>
                  </ul>
                  </div>
                  </Li>
